@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections;
+namespace HashTableDemo
+{
+    class Program
+    {
+    
+        static void Main(string[] args)
+        {
+            Hashtable ht = new Hashtable();
+            ht.Add("Name", "Jahnavi");
+            ht.Add("State", "Karanataka");
+            ht.Add("code", "518360");
+            ht.Add("India", "Mumbai");
+            ht.Add("Dist", "Telengana");
+            ht.Add("Code", "098762");
+            ICollection keys = ht.Keys;
+            foreach (string K in keys)
+            {
+                Console.WriteLine("ht[Name]");
+            }
+            Console.WriteLine(ht.ContainsKey("Name"));
+            Console.WriteLine(ht.ContainsValue("098762"));
+            Console.ReadKey();
+            
+        }
+    }
+}
